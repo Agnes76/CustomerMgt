@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "727e7ec5-165f-4aa2-a3a1-7833316508ed": {
+      "ProjectGuid": "727e7ec5-165f-4aa2-a3a1-7833316508ed",
+      "DisplayName": "CustomerMgt.BL",
+      "ColorIndex": 0
+    },
+    "c71f44dc-266c-43aa-a578-e3e1de5d1eab": {
+      "ProjectGuid": "c71f44dc-266c-43aa-a578-e3e1de5d1eab",
+      "DisplayName": "CustomerMgt.Test",
+      "ColorIndex": 1
+    },
+    "a8cb6276-ec03-4618-a20d-881d3908a15e": {
+      "ProjectGuid": "a8cb6276-ec03-4618-a20d-881d3908a15e",
+      "DisplayName": "CustomerManagement",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
