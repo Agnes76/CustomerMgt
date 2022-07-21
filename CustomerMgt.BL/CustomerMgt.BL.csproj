@@ -44,10 +44,17 @@
     <Compile Include="Address.cs" />
     <Compile Include="AddressType.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="EntityBase.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderItem.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerMgt.Common\CustomerMgt.Common.csproj">
+      <Project>{cd7c928f-abd3-4205-a5f8-1a03547a062a}</Project>
+      <Name>CustomerMgt.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

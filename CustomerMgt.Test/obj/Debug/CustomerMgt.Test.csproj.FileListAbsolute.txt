@@ -21,3 +21,5 @@ C:\Users\hp\Documents\Project\Payment\CodingChallenge\CustomerMgt\CustomerMgt.Te
 C:\Users\hp\Documents\Project\Payment\CodingChallenge\CustomerMgt\CustomerMgt.Test\obj\Debug\CustomerMgt.Test.pdb
 C:\Users\hp\Documents\Project\Payment\CodingChallenge\CustomerMgt\CustomerMgt.Test\bin\Debug\CustomerMgt.Data.dll
 C:\Users\hp\Documents\Project\Payment\CodingChallenge\CustomerMgt\CustomerMgt.Test\bin\Debug\CustomerMgt.Data.pdb
+C:\Users\hp\Documents\Project\Payment\CodingChallenge\CustomerMgt\CustomerMgt.Test\bin\Debug\CustomerMgt.Common.dll
+C:\Users\hp\Documents\Project\Payment\CodingChallenge\CustomerMgt\CustomerMgt.Test\bin\Debug\CustomerMgt.Common.pdb

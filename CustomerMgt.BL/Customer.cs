@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CustomerMgt.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace CustomerMgt.BL
 {
-    public class Customer
+    public class Customer : EntityBase, ILoggable
     {
-        public Customer()
+        public Customer() : this(0)
         {
 
         }
@@ -16,6 +17,7 @@ namespace CustomerMgt.BL
         public Customer(int customerId)
         {
             CustomerId = customerId;
+            AddressList = new List<Address>();
         }
         public int CustomerId { get; private set; }
         public string FirstName { get; set; }
@@ -44,10 +46,17 @@ namespace CustomerMgt.BL
             }
         }
         public string EmailAddress { get; set; }
+        public List<Address> AddressList { get; set; }
+        public int CustomerType { get; set; }
+
+        public override string ToString()
+        {
+            return FullName;
+        }
 
         public static int InstanceCount { get; set; }
 
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
@@ -56,5 +65,18 @@ namespace CustomerMgt.BL
 
             return isValid;
         }
+
+        public string LogError()
+        {
+            var logString = CustomerId + ": " +
+                             FullName + " " + "Email: " +
+                             EmailAddress + " " + "Status: " +
+                             EntityState.ToString();
+
+            return logString;
+        }
+
+        public string Log() =>
+            $"{CustomerId}: {FullName} Email: {EmailAddress} Status: {EntityState.ToString()}";
     }
 }

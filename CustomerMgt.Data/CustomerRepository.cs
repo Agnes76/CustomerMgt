@@ -9,6 +9,11 @@ namespace CustomerMgt.Data
 {
     public class CustomerRepository
     {
+        public CustomerRepository()
+        {
+            addressRepo = new AddressRepository();
+        }
+        private AddressRepository addressRepo { get; set; }
         public Customer Retrieve(int customerId)
         {
             Customer customer = new Customer(customerId);
@@ -18,7 +23,9 @@ namespace CustomerMgt.Data
                 customer.FirstName = "Agnes";
                 customer.LastName = "Ugochukwu";
                 customer.EmailAddress = "agnes@gmail.com";
+                customer.AddressList = addressRepo.RetrieveByCustomerId(customerId).ToList();
             }
+            Console.WriteLine($"Customer: {customer.ToString()}");
 
             return customer;
         }

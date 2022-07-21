@@ -63,6 +63,7 @@
     <Compile Include="CustomerRepositoryTest.cs" />
     <Compile Include="ProductRepositoryTest.cs" />
     <Compile Include="OrderRepositoryTest.cs" />
+    <Compile Include="StringHandlerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -71,6 +72,10 @@
     <ProjectReference Include="..\CustomerMgt.BL\CustomerMgt.BL.csproj">
       <Project>{4fa9b53d-aa6b-48db-bb48-6f298068a9a6}</Project>
       <Name>CustomerMgt.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomerMgt.Common\CustomerMgt.Common.csproj">
+      <Project>{CD7C928F-ABD3-4205-A5F8-1A03547A062A}</Project>
+      <Name>CustomerMgt.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\CustomerMgt.Data\CustomerMgt.Data.csproj">
       <Project>{2D6265CF-AE05-4607-9D22-C17EE70040D0}</Project>

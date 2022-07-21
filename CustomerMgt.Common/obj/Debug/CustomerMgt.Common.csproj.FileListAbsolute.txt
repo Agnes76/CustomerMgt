@@ -1,0 +1,6 @@
+C:\Users\hp\Documents\Project\Payment\CodingChallenge\CustomerMgt\CustomerMgt.Common\bin\Debug\CustomerMgt.Common.dll
+C:\Users\hp\Documents\Project\Payment\CodingChallenge\CustomerMgt\CustomerMgt.Common\bin\Debug\CustomerMgt.Common.pdb
+C:\Users\hp\Documents\Project\Payment\CodingChallenge\CustomerMgt\CustomerMgt.Common\obj\Debug\CustomerMgt.Common.csproj.AssemblyReference.cache
+C:\Users\hp\Documents\Project\Payment\CodingChallenge\CustomerMgt\CustomerMgt.Common\obj\Debug\CustomerMgt.Common.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\Project\Payment\CodingChallenge\CustomerMgt\CustomerMgt.Common\obj\Debug\CustomerMgt.Common.dll
+C:\Users\hp\Documents\Project\Payment\CodingChallenge\CustomerMgt\CustomerMgt.Common\obj\Debug\CustomerMgt.Common.pdb

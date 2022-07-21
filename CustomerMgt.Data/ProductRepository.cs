@@ -19,6 +19,9 @@ namespace CustomerMgt.Data
                 product.ProductionDescription = "Energy Drink";
                 product.CurrentPrice = 100.00M;
             }
+            Object myObject = new Object();
+            Console.WriteLine($"Object: {myObject.ToString()}");
+            Console.WriteLine($"Product: {product.ToString()}");
 
             return product;
         }
@@ -28,9 +31,29 @@ namespace CustomerMgt.Data
             return new List<Product>();
         }
 
-        public bool Save()
+        public bool Save(Product product)
         {
-            return true;
+            var success = true;
+
+            if (product.HasChanges)
+            {
+                if (product.IsValid)
+                {
+                    if (product.IsNew)
+                    {
+                        // call an inserted stored procedure
+                    }
+                    else
+                    {
+                        // call an updated stored procedure
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+            return success;
         }
     }
 }
